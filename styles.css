@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    @apply font-sans;
+    @apply text-secondary !important;
+  }
+  
+
+
+  /* @layer utilities {
+    .text-xs {
+      @apply text-xs;
+    }
+    .text-sm {
+      @apply text-sm;
+    }
+    .text-lg {
+      @apply text-lg;
+    }
+    .text-xl {
+      @apply text-xl;
+    }
+    .text-5xl {
+      @apply text-5xl;
+    }
+  } */
+  @layer components {
+    .btn {
+      @apply px-4  h-[40px]  rounded transition duration-300 ease-in-out;
+    }
+    .btn-primary {
+      @apply bg-primary text-white hover:bg-primary-light focus:ring-2 focus:ring-primary-light;
+    }
+    .btn-secondary {
+      @apply bg-transparent text-primary hover:bg-primary-light border border-primary rounded-3xl ring-1 ring-neutral-dark;
+    }
+    .btn-accent {
+      @apply bg-accent-yellow text-black hover:bg-yellow-500 focus:ring-2 focus:ring-yellow-300;
+    }
+    .btn-secondary {
+      @apply bg-gray-400 text-primary hover:bg-primary-light border-2 border-primary rounded-3xl ring-1 ring-neutral-dark;
+    }
+  }
+  
+  @layer components {
+    .card {
+      @apply bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-xl;
+    }
+    .card-img {
+      @apply w-full h-48 object-cover;
+    }
+    .card-body {
+      @apply p-6;
+    }
+    .card-title {
+      @apply text-xl font-bold text-gray-800 mb-2;
+    }
+    .card-text {
+      @apply text-gray-600 mb-4;
+    }
+    .card-actions {
+      @apply flex gap-4;
+    }
+  }
+  @layer components {
+    .nav-link {
+      @apply text-secondary   hover:text-blue-500 transition duration-200;
+    }
+  }
