@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Thrusher</title>
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,14 +26,14 @@
     <header class="bg-white">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
             <!-- Logo -->
-            <a href="#" class="text-2xl md:text-3xl font-bold text-black">Thrusher</a>
+            <a href="#" class="text-2xl md:text-3xl font-bold  bg-indigo-50 p-2">Thrusher</a>
 
             <!-- Centered Navigation Links (Hidden on mobile, visible on medium screens and larger) -->
             <nav class="hidden md:flex gap-[40px] mx-auto">
-                <a href="#" class="nav-link">Product</a>
-                <a href="#" class="nav-link">Solutions</a>
+                <a href="#features" class="nav-link">Product</a>
+                <a href="#how-it-work" class="nav-link">Solutions</a>
                 <a href="#" class="nav-link">Resources</a>
-                <a href="#" class="nav-link">Customers</a>
+                <a href="#clients" class="nav-link">Customers</a>
                 <a href="#" class="nav-link">Pricing</a>
             </nav>
 
@@ -46,7 +52,7 @@
 
         <!-- Mobile Menu (Initially hidden off-screen, only visible on mobile, hidden on medium screens and larger) -->
         <div id="mobile-menu"
-            class="fixed bg-white left-0 top-0 h-full w-64 shadow text-white transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
+            class="fixed z-10  bg-white left-0 top-0 h-full w-64 shadow text-white transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
             <div class="flex justify-end p-4">
                 <button id="close-btn" class="text-black">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -55,10 +61,11 @@
                     </svg>
                 </button>
             </div>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Home</a>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">About</a>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Services</a>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Contact</a>
+            <a href="#features" class="block px-[30px] py-2 text-black hover:bg-blue-100">Product</a>
+            <a href="#how-it-work" class="block px-[30px] py-2 text-black hover:bg-blue-100">Solutions</a>
+            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Resources</a>
+            <a href="#clients" class="block px-[30px] py-2 text-black hover:bg-blue-100">Customers</a>
+            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Pricing</a>
         </div>
     </header>
 
@@ -141,7 +148,7 @@
             <div class="grid grid-cols-1 py-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
                 <div>
-                    <img src="../assets/ai.png" alt="Service 1"
+                    <img src="../assets/ai.svg" alt="Service 1"
                         class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
                     <h3 class="text-base text-center font-semibold text-gray-800">
                         AI-Driven Optimization
@@ -153,7 +160,7 @@
 
                 <!-- Service 2 -->
                 <div>
-                    <img src="../assets/power.png" alt="Service 1"
+                    <img src="../assets/power.svg" alt="Service 1"
                         class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
                     <h3 class="text-base text-center font-semibold text-gray-800">
                         Group Buying Power
@@ -165,7 +172,7 @@
 
                 <!-- Service 3 -->
                 <div>
-                    <img src="../assets/commitment.png" alt="Service 1"
+                    <img src="../assets/commitment.svg" alt="Service 1"
                         class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
                     <h3 class="text-base text-center font-semibold text-gray-800">
                         Flexible Commitments
@@ -177,7 +184,7 @@
 
                 <!-- Service 4 -->
                 <div>
-                    <img src="../assets/saving.png" alt="Service 1"
+                    <img src="../assets/saving.svg" alt="Service 1"
                         class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
                     <h3 class="text-base text-center font-semibold text-gray-800">
                          Instant Savings
@@ -190,7 +197,7 @@
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-16" id="how-it-work">
         <div class="container mx-auto px-4 text-center">
             <!-- Heading and Subtitle -->
             <h2 class="text-3xl font-bold text-black mb-4">How It Works</h2>
@@ -200,7 +207,7 @@
             </p>
 
             <!-- Steps with Connecting Lines -->
-            <div class="flex w-[80%] mx-auto items-center py-4 justify-between gap-2 lg:gap-8 mb-12">
+            <div class="hidden md:flex w-[80%] mx-auto items-center py-4 justify-between gap-2 lg:gap-8 mb-12">
                 <!-- Step 1 -->
                 <div class="flex-col items-center">
                     <div
@@ -240,8 +247,8 @@
             <!-- Grid Layout for Services -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
-                    <img src="../assets/connect.png" alt="Service 1" class="mx-auto object-cover mb-4" />
+                <div class="bg-white w-64 p-6 shadow-spread rounded-[20px] transition duration-300 mx-auto">
+                    <img src="../assets/connect.svg" alt="Service 1" class="mx-auto mb-4" />
                     <h3 class="text-base font-semibold text-black">Connect</h3>
                     <p class="text-secondary mt-2">
                         Create stunning websites that are both functional and beautiful.
@@ -249,8 +256,8 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
-                    <img src="../assets/analyz.png" alt="Service 1" class="mx-auto object-cover mb-4" />
+                <div class="bg-white w-64 p-6 shadow-spread rounded-[20px] transition duration-300 mx-auto">
+                    <img src="../assets/analyz.svg" alt="Service 2" class="mx-auto object-cover mb-4" />
                     <h3 class="text-base font-semibold text-black">Analyze</h3>
                     <p class="text-secondary mt-2">
                         AI scans for savings opportunities
@@ -258,23 +265,24 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
-                    <img src="../assets/save.png" alt="Service 1" class="mx-auto object-cover mb-4" />
+                <div class="bg-white w-64 p-6 shadow-spread rounded-[20px] transition duration-300 mx-auto">
+                    <img src="../assets/save.svg" alt="Service 3" class="mx-auto object-cover mb-4" />
                     <h3 class="text-base font-semibold text-black">Save</h3>
                     <p class="text-secondary mt-2">Automated discount application</p>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
-                    <img src="../assets/monitor.png" alt="Service 1" class="mx-auto object-cover mb-4" />
+                <div class="bg-white w-64 p-6 shadow-spread rounded-[20px] transition duration-300 mx-auto">
+                    <img src="../assets/monitor.svg" alt="Service 4" class="mx-auto object-cover mb-4" />
                     <h3 class="text-base font-semibold text-black">Monitor</h3>
                     <p class="text-secondary mt-2">Real-time optimization</p>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="py-16" id="features">
         <div class="container mx-auto px-4">
             <h2 class="text-2xl lg:text-4xl lg:leading-[40px] font-bold text-black mb-5">
                 Cloud Cost Optimization Features
@@ -286,11 +294,15 @@
             </p>
             <div class="grid grid-cols-1 py-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px]">
+                <div
+                    class="bg-[#F5F7F9] rounded-[20px] p-[30px] transition duration-300 transform lg:hover:scale-105 lg:hover:shadow-soft">
                     <h3 class="text-xl mb-[10px] font-semibold text-black">
                         Cost Analysis Dashboard
                     </h3>
-                    <ul class="px-2">
+                    <p class="mb-2 text-secondary">Join 1000+ startups saving money with automated cloud cost
+                        optimization</p>
+                    <hr>
+                    <ul class="px-2 mt-3">
                         <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
                             <img src="../assets/mdi_check-all.png" alt="" />Real-time cost
                             tracking
@@ -312,11 +324,15 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px]">
+                <div
+                    class="bg-[#F5F7F9] rounded-[20px] p-[30px] transition duration-300 transform lg:hover:scale-105 lg:hover:shadow-soft">
                     <h3 class="text-xl mb-[10px] font-semibold text-black">
                         Resource Management
                     </h3>
-                    <ul class="px-2">
+                    <p class="mb-2 text-secondary">Join 1000+ startups saving money with automated cloud cost
+                        optimization</p>
+                    <hr>
+                    <ul class="px-2 mt-3">
                         <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
                             <img src="../assets/mdi_check-all.png" alt="" />Idle resource
                             detection
@@ -338,11 +354,15 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px]">
+                <div
+                    class="bg-[#F5F7F9] rounded-[20px] p-[30px] transition duration-300 transform lg:hover:scale-105 lg:hover:shadow-soft">
                     <h3 class="text-xl mb-[10px] font-semibold text-black">
                         Monitoring & Alerts
                     </h3>
-                    <ul class="px-2">
+                    <p class="mb-2 text-secondary">Join 1000+ startups saving money with automated cloud cost
+                        optimization</p>
+                    <hr>
+                    <ul class="px-2 mt-3">
                         <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
                             <img src="../assets/mdi_check-all.png" alt="" />Custom alert
                             thresholds
@@ -369,11 +389,15 @@
 
             <div class="grid grid-cols-1 py-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <!-- Service 1 -->
-                <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px] pb-[0px">
+                <div
+                    class=" bg-[#F5F7F9] rounded-[20px] p-[30px] transition duration-300 transform lg:hover:scale-105 lg:hover:shadow-soft">
                     <h3 class="text-xl mb-[10px] font-semibold text-black">
                         Saving opportunities
                     </h3>
-                    <ul class="px-2 mb-0 pb-0">
+                    <p class="mb-2 text-secondary">Join 1000+ startups saving money with automated cloud cost
+                        optimization</p>
+                    <hr>
+                    <ul class="px-2 mb-0 mt-3 pb-0">
                         <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
                             <img src="../assets/mdi_check-all.png" alt="" />Optimal
                             utilization of Reserved Instances, Savings Plans, and Spot
@@ -405,7 +429,8 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px] ]">
+                <div
+                    class="bg-[#F5F7F9] rounded-[20px] p-[30px] transition duration-300 transform lg:hover:scale-105 lg:hover:shadow-soft">
                     <h3 class="text-xl mb-[10px] font-semibold text-black">
                         Integrations
                     </h3>
@@ -502,12 +527,82 @@
         </div>
     </section>
 
+
+    <section class="py-16 overflow-hidden" id="clients" >
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+                What Our Clients Say
+            </h2>
+
+            <!-- Slick Slider Container -->
+
+            <div class="testimonial-slider   ">
+                <div class="testimonial-slide  bg-[#F5F7F9] p-6 rounded-[20px] ">
+                    <p class="text-black mb-4">
+                        "Thrusher's AI saved us 30% on AWS costs in just a month! Their dashboard is user-friendly and
+                        powerful."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://mighty.tools/mockmind-api/content/human/80.jpg" alt="Client 1"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-gray-800 font-semibold">Jane Doe</h3>
+                            <p class="text-sm text-gray-500">CEO, TechStartup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide pr-[20px] bg-[#F5F7F9] p-6  rounded-[20px] ">
+                    <p class="text-black mb-4">
+                        "A must-have tool for managing cloud expenses effectively. Their AI-driven insights are
+                        top-notch!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://mighty.tools/mockmind-api/content/human/79.jpg" alt="Client 2"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-gray-800 font-semibold">John Smith</h3>
+                            <p class="text-sm text-gray-500">CTO, CloudInnovators</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide pr-[20px] bg-[#F5F7F9] p-6  rounded-[20px] ">
+                    <p class="text-black mb-4">
+                        "Our team loved the seamless integration and the immediate savings we achieved!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://mighty.tools/mockmind-api/content/human/44.jpg" alt="Client 3"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-gray-800 font-semibold">Emily Davis</h3>
+                            <p class="text-sm text-gray-500">Founder, StartUpHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide pr-[20px] bg-[#F5F7F9] p-6  rounded-[20px] ">
+                    <p class="text-black mb-4">
+                        "Our team loved the seamless integration and the immediate savings we achieved!"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://mighty.tools/mockmind-api/content/human/44.jpg" alt="Client 3"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-gray-800 font-semibold">Emily Davis</h3>
+                            <p class="text-sm text-gray-500">Founder, StartUpHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
     <footer class="bg-primary-dark py-10 text-gray-300">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <!-- Column 1 -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Thrusher</h4>
+                    <h4 class="text-2xl font-semibold mb-4 text-white">Thrusher</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dignissimos, quis.
@@ -522,7 +617,7 @@
 
                 <!-- Column 2 -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Resources</h4>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Resources</h4>
                     <ul>
                         <li class="mb-3">
                             <a href="#" class="hover:text-primary transition-colors">Documentation</a>
@@ -532,13 +627,20 @@
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="hover:text-primary transition-colors"> Integration Guides</a>
+                            <a href="#" class="hover:text-primary transition-colors">Integration Guides</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Blog</h4>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Blog</h4>
                     <ul>
+                        <li class="mb-3">
+                            <a href="blog.html" class="hover:text-primary transition-colors">Blogs
+                            </a>
+                        </li>
                         <li class="mb-3">
                             <a href="blog.html" class="hover:text-primary transition-colors">Case Studies
                             </a>
@@ -554,7 +656,7 @@
 
                 <!-- Column 3 -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Legal</h4>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Legal</h4>
                     <ul>
                         <li class="mb-3">
                             <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
@@ -576,24 +678,81 @@
         </div>
     </footer>
 
+
+
     <script>
         // let year = new Date().getFullYear()
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const closeBtn = document.getElementById("close-btn");
-
-        // Open mobile menu
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("-translate-x-full"); // Slide in menu
-            mobileMenu.classList.add("translate-x-0"); // Ensure it's in view
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,  // For screens <= 768px (typically mobile and tablet)
+                        settings: {
+                            slidesToShow: 1,  // Show only 1 slide
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
         });
 
-        // Close mobile menu
-        closeBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("translate-x-0"); // Slide out menu
-            mobileMenu.classList.add("-translate-x-full"); // Ensure it's off-screen
-        });
+        //     $(document).ready(function(){
+        //     $('#testimonial-slider').slick({
+        //         infinite: true,          // Infinite loop
+        //         slidesToShow: 1,         // Show 1 slide at a time
+        //         slidesToScroll: 1,       // Scroll 1 slide at a time
+        //         arrows: true,            // Show next/prev arrows
+        //         dots: true,              // Show dots navigation
+        //         autoplay: true,          // Enable autoplay
+        //         autoplaySpeed: 3000,     // Autoplay interval (3 seconds)
+        //         adaptiveHeight: true,    // Adjust height to the slide content
+        //         responsive: [
+        //             {
+        //                 breakpoint: 768,  // Mobile responsiveness
+        //                 settings: {
+        //                     slidesToShow: 1,  // Show 1 slide on mobile
+        //                     slidesToScroll: 1,
+        //                     arrows: true,
+        //                     dots: true,
+        //                 }
+        //             },
+        //             {
+        //                 breakpoint: 1024,  // For tablet screens
+        //                 settings: {
+        //                     slidesToShow: 1,  // Show 1 slide at a time
+        //                     slidesToScroll: 1,
+        //                     arrows: true,
+        //                     dots: true,
+        //                 }
+        //             }
+        //         ]
+        //     });
+        // });
+
     </script>
+    <script src="main.js"></script>
+    <!-- document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const targetId = this.getAttribute('href').slice(1); // Get the ID without the `#`
+      const targetElement = document.getElementById(targetId);
+  
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth', // Smooth scroll
+          block: 'start'      // Align to the top
+        });
+      }
+    });
+  }); -->
+
 </body>
 
 </html>

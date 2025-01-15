@@ -62,108 +62,81 @@
             <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Pricing</a>
         </div>
     </header>
-    <section class="relative w-full h-96 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6">
-          <h1 class="text-4xl md:text-5xl font-semibold mb-4 z-10">Welcome to Our Blog</h1>
-          <p class="text-lg md:text-xl mb-6 text-white z-10 ">Discover insightful articles on the latest trends in technology, development, and more.</p>
-          <!-- <a href="#latest-post" class="inline-block bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-md text-lg font-medium transition duration-300 ease-in-out">Read Our Latest Post</a> -->
-        </div>
-      </section>    
-    <main class="container mx-auto px-6 lg:px-8 py-12">
-        <h2 class="text-3xl font-bold text-primary-dark mb-8">Latest Posts</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Blog Post 1 -->
-            <article class="bg-white rounded shadow-soft overflow-hidden hover:shadow-hard transition">
-                <img src="https://images.pexels.com/photos/1181290/pexels-photo-1181290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Post Image" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-black mb-2">Optimizing Costs with AWS Cost Explorer</h3>
-                    <p class="text-sm text-neutral mb-4">
-                        AWS Cost Explorer is a powerful tool to help you analyze and manage your AWS spending. Learn how
-                        to identify cost drivers, visualize spending trends, and create budgets to keep your cloud costs
-                        in check.
-                    </p>
-                    <a href="blog-details.html" class="text-primary-light font-medium hover:underline">Read More</a>
+    <main class="py-16 px-6">
+        <div class="container mx-auto">
+            <!-- Blog Post -->
+            <div class="px-4">
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <span>January 16, 2025</span>
+                    <span>By <a href="#" class="text-purple-600 hover:text-purple-400">John Doe</a></span>
                 </div>
-            </article>
+                <h1 class="text-3xl font-semibold mt-4 mb-2 text-gray-900">Scaling Applications with AWS Auto Scaling
+                </h1>
+                <p class="text-secondary">When it comes to managing cloud-based applications, ensuring that they
+                    are scalable, reliable, and cost-efficient is essential. AWS Auto Scaling offers a powerful solution
+                    to automatically adjust the number of instances running in your cloud environment to meet
+                    fluctuating demands. By leveraging AWS Auto Scaling, you can guarantee that your applications remain
+                    responsive, minimize downtime, and optimize costs.
 
-            <!-- Blog Post 2 -->
-            <article class="bg-white rounded shadow-soft overflow-hidden hover:shadow-hard transition">
-                <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Post Image" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-black mb-2">Scaling Applications with AWS Auto Scaling</h3>
-                    <p class="text-sm text-neutral mb-4">
-                        AWS Auto Scaling ensures your applications remain responsive by automatically adjusting the
-                        number of instances based on demand. Discover best practices for configuring scaling policies
-                        and improving application performance.
-                    </p>
-                    <a href="blog-details.html" class="text-primary-light font-medium hover:underline">Read More</a>
-                </div>
-            </article>
+                    In this blog, we’ll explore the key concepts of AWS Auto Scaling, best practices for configuring
+                    scaling policies, and how to use it to improve the performance and availability of your application.
+                </p>
 
-            <!-- Blog Post 3 -->
-            <article class="bg-white rounded shadow-soft overflow-hidden hover:shadow-hard transition">
-                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Post Image" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-black mb-2">Secure Your Cloud with AWS Identity and Access
-                        Management (IAM)</h3>
-                    <p class="text-sm text-neutral mb-4">
-                        AWS IAM allows you to securely manage access to your resources. Learn how to set up fine-grained
-                        permissions, implement multi-factor authentication, and protect sensitive data.
-                    </p>
-                    <a href="blog-details.html" class="text-primary-light font-medium hover:underline">Read More</a>
-                </div>
-            </article>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-[30px]">
-            <!-- Blog Post 1 -->
-            <article class="bg-white rounded shadow-soft overflow-hidden hover:shadow-hard transition">
-                <img src="https://images.pexels.com/photos/1181290/pexels-photo-1181290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Post Image" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-black mb-2">Optimizing Costs with AWS Cost Explorer</h3>
-                    <p class="text-sm text-neutral mb-4">
-                        AWS Cost Explorer is a powerful tool to help you analyze and manage your AWS spending. Learn how
-                        to identify cost drivers, visualize spending trends, and create budgets to keep your cloud costs
-                        in check.
-                    </p>
-                    <a href="blog-details.html" class="text-primary-light font-medium hover:underline">Read More</a>
-                </div>
-            </article>
+                <h2 class="text-2xl font-bold py-2">What is AWS Auto Scaling?</h2>
+                <p class="text-secondary"   >AWS Auto Scaling is a service that automatically adjusts the number of Amazon Elastic Compute Cloud
+                    (EC2) instances, as well as other resources like Amazon RDS and Amazon ECS, to meet the demands of
+                    your application. The goal is to ensure that your applications have the right amount of resources at
+                    any given time, scaling up during periods of high demand and scaling down during periods of low
+                    traffic.
+                    <br>
+                    AWS Auto Scaling integrates with various AWS services to manage multiple types of workloads,
+                    including applications hosted on EC2 instances, containerized workloads on ECS, and databases on
+                    RDS. It’s designed to help you:
+                </p>
 
-            <!-- Blog Post 2 -->
-            <article class="bg-white rounded shadow-soft overflow-hidden hover:shadow-hard transition">
-                <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Post Image" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-black mb-2">Scaling Applications with AWS Auto Scaling</h3>
-                    <p class="text-sm text-neutral mb-4">
-                        AWS Auto Scaling ensures your applications remain responsive by automatically adjusting the
-                        number of instances based on demand. Discover best practices for configuring scaling policies
-                        and improving application performance.
-                    </p>
-                    <a href="blog-details.html" class="text-primary-light font-medium hover:underline">Read More</a>
-                </div>
-            </article>
+                <!-- Social Share Buttons -->
 
-            <!-- Blog Post 3 -->
-            <article class="bg-white rounded shadow-soft overflow-hidden hover:shadow-hard transition">
-                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Post Image" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-black mb-2">Secure Your Cloud with AWS Identity and Access
-                        Management (IAM)</h3>
-                    <p class="text-sm text-neutral mb-4">
-                        AWS IAM allows you to securely manage access to your resources. Learn how to set up fine-grained
-                        permissions, implement multi-factor authentication, and protect sensitive data.
-                    </p>
-                    <a href="blog-details.html" class="text-primary-light font-medium hover:underline">Read More</a>
+                <div class="   mx-auto bg-white  mt-5 overflow-hidden">
+                    <!-- Image -->
+                    <img src="https://images.pexels.com/photos/1181290/pexels-photo-1181290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Blog Image" class="w-full h-[400px]  object-cover">
+
+                    <!-- Post Content -->
+
                 </div>
-            </article>
+            </div>
+            <section class="mt-12 px-4 max-w-screen-md  w-full container">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Comments</h2>
+
+                <!-- Comment Form -->
+                <form class="bg-white p-6 rounded-xl shadow-lg">
+                    <textarea rows="4" placeholder="Add a comment..."
+                        class="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                    <button type="submit"
+                        class="mt-4 px-6 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none">Post
+                        Comment</button>
+                </form>
+
+                <!-- Existing Comments -->
+                <div class="mt-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4">
+                        <p class="text-gray-700 mb-2">Great post! I love the way you used Tailwind CSS for this design.
+                            It looks very modern and clean.</p>
+                        <div class="text-sm text-gray-500">January 16, 2025 by <span class="text-purple-600">Alice
+                                Smith</span></div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4">
+                        <p class="text-gray-700 mb-2">Tailwind is a fantastic tool for building rapid prototypes.
+                            Definitely going to try this layout!</p>
+                        <div class="text-sm text-gray-500">January 16, 2025 by <span class="text-purple-600">Bob
+                                Johnson</span></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Comment Section -->
+         
         </div>
     </main>
 

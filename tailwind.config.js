@@ -62,9 +62,10 @@ module.exports = {
       },
       boxShadow: {
         DEFAULT: "rgba(0, 0, 0, 0.09) 0px 3px 12px;",
-        soft: "0 4px 6px rgba(0, 0, 0, 0.1)", // Add soft shadow
+        soft: "rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;", // Add soft shadow
         hard: "0 10px 15px rgba(0, 0, 0, 0.2)", // Add a hard shadow
-        spread:"rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;"
+        spread:"rgba(149, 157, 165, 0.2) 0px 8px 24px;"
+        
       },
       borderRadius: {
         DEFAULT: "8px",

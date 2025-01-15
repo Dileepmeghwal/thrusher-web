@@ -20,19 +20,20 @@
     <header class="bg-white">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
             <!-- Logo -->
-            <a href="index.html" class="text-2xl md:text-3xl font-bold text-black">Thrusher</a>
+            <a href="index.html" class="text-2xl md:text-3xl font-bold  bg-indigo-50 p-2">Thrusher</a>
 
             <!-- Centered Navigation Links (Hidden on mobile, visible on medium screens and larger) -->
             <nav class="hidden md:flex gap-[40px] mx-auto">
-                <a href="#" class="nav-link">Product</a>
-                <a href="#" class="nav-link">Solutions</a>
+                <a href="#features" class="nav-link">Product</a>
+                <a href="#how-it-work" class="nav-link">Solutions</a>
                 <a href="#" class="nav-link">Resources</a>
-                <a href="#" class="nav-link">Customers</a>
+                <a href="#clients" class="nav-link">Customers</a>
                 <a href="#" class="nav-link">Pricing</a>
             </nav>
 
             <!-- Book a Demo Button (Hidden on mobile) -->
-            <button class="btn btn-primary hidden md:block">Book a demo</button>
+            <!-- <button class="btn btn-primary hidden md:block" onclick="location.href='schedule-a-demo.html'">Book a
+                demo</button> -->
 
             <!-- Hamburger Menu (Mobile) -->
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-btn">
@@ -45,7 +46,7 @@
 
         <!-- Mobile Menu (Initially hidden off-screen, only visible on mobile, hidden on medium screens and larger) -->
         <div id="mobile-menu"
-            class="fixed bg-white left-0 top-0 h-full w-64 shadow text-white transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
+            class="fixed z-10  bg-white left-0 top-0 h-full w-64 shadow text-white transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
             <div class="flex justify-end p-4">
                 <button id="close-btn" class="text-black">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -54,10 +55,11 @@
                     </svg>
                 </button>
             </div>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Home</a>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">About</a>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Services</a>
-            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Contact</a>
+            <a href="#features" class="block px-[30px] py-2 text-black hover:bg-blue-100">Product</a>
+            <a href="#how-it-work" class="block px-[30px] py-2 text-black hover:bg-blue-100">Solutions</a>
+            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Resources</a>
+            <a href="#clients" class="block px-[30px] py-2 text-black hover:bg-blue-100">Customers</a>
+            <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Pricing</a>
         </div>
     </header>
 
@@ -138,7 +140,7 @@
                         <img src="./assets/msg.png" alt="Card Image" class="mx-auto w-[50px] object-cover" />
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        <h3 class="text-base font-bold text-gray-800 mb-2">
                             Customized Demo Experience
                         </h3>
                         <p class="text-secondary mb-4">
@@ -157,7 +159,7 @@
                         <img src="./assets/cash.png" alt="Card Image" class="mx-auto w-[50px] object-cover" />
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        <h3 class="text-base font-bold text-gray-800 mb-2">
                             Savings Assessment at No Cost
                         </h3>
                         <p class="text-secondary mb-4">
@@ -176,7 +178,7 @@
                         <img src="./assets/closure.png" alt="Card Image" class="mx-auto w-[50px] object-cover" />
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">
+                        <h3 class="text-base font-bold text-gray-800 mb-2">
                             Strategic Cost Management Insights
                         </h3>
                         <p class="text-secondary mb-4">
@@ -195,7 +197,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <!-- Column 1 -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Thrusher</h4>
+                    <h4 class="text-2xl font-semibold mb-4 text-white">Thrusher</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dignissimos, quis.
@@ -210,7 +212,7 @@
 
                 <!-- Column 2 -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Resources</h4>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Resources</h4>
                     <ul>
                         <li class="mb-3">
                             <a href="#" class="hover:text-primary transition-colors">Documentation</a>
@@ -222,13 +224,20 @@
                         <li class="mb-3">
                             <a href="#" class="hover:text-primary transition-colors"> Integration Guides</a>
                         </li>
+                        <li class="mb-3">
+                            <a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Blog</h4>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Blog</h4>
                     <ul>
                         <li class="mb-3">
-                            <a href="#" class="hover:text-primary transition-colors">Case Studies
+                            <a href="blog.html" class="hover:text-primary transition-colors">Blogs
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="blog.html" class="hover:text-primary transition-colors">Case Studies
                             </a>
                         </li>
                         <li class="mb-3">
@@ -242,7 +251,7 @@
 
                 <!-- Column 3 -->
                 <div>
-                    <h4 class="text-lg font-semibold mb-4 text-white">Legal</h4>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Legal</h4>
                     <ul>
                         <li class="mb-3">
                             <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>

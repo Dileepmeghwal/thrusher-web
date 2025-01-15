@@ -6,6 +6,9 @@ body {
   @apply font-sans;
   /* @apply text-secondary !important; */
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* @layer utilities {
     .text-xs {
@@ -73,4 +76,21 @@ body > div.private-layer > div > div > div{
   .nav-link {
     @apply text-secondary   hover:text-blue-500 transition duration-200;
   }
+}
+.meetings-iframe-container iframe {
+  /* display: none; */
+}
+
+.hubspot .ui-app .hubspot-disable-focus-styles{
+  display: none !important;
+}
+
+
+.testimonial-slider .slick-slide {
+  margin: 0 10px; /* Adjust the margin value here */
+}
+
+/* Optional: Adjust slick track if needed */
+.testimonial-slider .slick-track {
+  display: flex;
 }
