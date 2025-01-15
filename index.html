@@ -2,31 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tailwind Setup</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Thrusher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet" />
 </head>
 
 <body>
-
     <!-- Header Section -->
     <header class="bg-white">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-
             <!-- Logo -->
             <a href="#" class="text-2xl md:text-3xl font-bold text-black">Thrusher</a>
 
             <!-- Centered Navigation Links (Hidden on mobile, visible on medium screens and larger) -->
             <nav class="hidden md:flex gap-[40px] mx-auto">
-                <a href="#" class="nav-link  ">Product</a>
+                <a href="#" class="nav-link">Product</a>
                 <a href="#" class="nav-link">Solutions</a>
                 <a href="#" class="nav-link">Resources</a>
                 <a href="#" class="nav-link">Customers</a>
@@ -34,7 +32,8 @@
             </nav>
 
             <!-- Book a Demo Button (Hidden on mobile) -->
-            <button class="btn btn-primary hidden md:block">Book a demo</button>
+            <button class="btn btn-primary hidden md:block" onclick="location.href='schedule-a-demo.html'">Book a
+                demo</button>
 
             <!-- Hamburger Menu (Mobile) -->
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-btn">
@@ -63,41 +62,41 @@
         </div>
     </header>
 
-
-    <section class="hero py-16  lg:py-16">
-        <div class="container mx-auto px-4 flex  flex-col  gap-[20px] md:flex-row items-center justify-between ">
-
+    <section class="hero py-16 lg:py-16">
+        <div class="container mx-auto px-4 flex flex-col gap-[20px] md:flex-row items-center justify-between">
             <!-- Left Side: Heading and Button -->
-            <div class="text-center md:text-left md:w-1/2 ">
+            <div class="text-center md:text-left md:w-1/2">
                 <h1
-                    class="text-2xl leading-[32px] md:text-4xl md:leading-[40px] lg:text-5xl lg:leading-[60px] font-bold  text-black mb-6">
-                    Slash Your AWS Costs by <br> 60% with AI-Powered <br> Solutions
+                    class="text-2xl leading-[32px] md:text-4xl md:leading-[40px] lg:text-5xl lg:leading-[60px] font-bold text-black mb-6">
+                    Slash Your AWS Costs by <br />
+                    60% with AI-Powered <br />
+                    Solutions
                 </h1>
-                <p class="  mb-6 text-secondary">
-                    Join 1000+ startups saving money with automated cloud cost optimization
+                <p class="mb-6 text-secondary">
+                    Join 1000+ startups saving money with automated cloud cost
+                    optimization
                 </p>
-                <button class="px-[20px] btn btn-primary ">Start with AWS</button>
-                <button class="btn mt-[10px] text-primary    mx-3    rounded-[8px] ring-1 ring-primary">
-                    Book Free Consultation <span>&#10230;</span>
-                </button>
+                <button class="px-[20px] btn btn-primary">Start with AWS</button>
 
+                <button onclick="location.href='schedule-a-demo.html'"
+                    class="btn mt-[10px] text-primary mx-3 h-[45px] py-[10px] rounded-[8px] border-[1px] border-primary">Book
+                    Free Consultation <span>&#10230;</span></button>
             </div>
 
             <!-- Right Side: Image -->
             <div class="md:w-1/3 mt-1 md:mt-0">
-                <img src="../assets/hero.png" alt="Hero Image" class="w-full ">
+                <img src="../assets/hero.png" alt="Hero Image" class="" />
             </div>
-
         </div>
     </section>
 
-    <section class="py-16">
+    <section class="mg:py-16 lg:py-16">
         <div class="container mx-auto px-4">
             <!-- <h2 class="text-3xl font-bold text-center mb-8">Trusted by Leading Brands</h2> -->
 
             <!-- Brand Logos Row -->
             <div
-                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2  justify-items-center bg-white bg-opacity-70 p-8  ">
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 justify-items-center bg-white bg-opacity-70 p-8">
                 <!-- Logo 1 -->
                 <div class="flex justify-center items-center">
                     <img src="../assets/1.png" alt="Brand Logo 1" class="max-w-full h-auto p-[10px]" />
@@ -126,90 +125,104 @@
         </div>
     </section>
 
-
     <section class="py-6">
-        <div class="container mx-auto px-4  ">
+        <div class="container mx-auto px-4">
             <!-- Heading and Subtitle -->
-            <h2 class="text-2xl lg:text-4xl lg:leading-[46px]  font-bold text-black  mb-5">Connect instantly and
-                identify <br>
-                potential savings</h2>
-            <p class="  text-secondary mb-12">Explore the variety of services we offer to help you achieve your
-                goals.</p>
+            <h2 class="text-2xl lg:text-4xl lg:leading-[46px] font-bold text-black mb-5">
+                Connect instantly and identify <br />
+                potential savings
+            </h2>
+            <p class="text-secondary mb-12">
+                Explore the variety of services we offer to help you achieve your
+                goals.
+            </p>
 
             <!-- Grid Layout for Services -->
             <div class="grid grid-cols-1 py-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
                 <div>
                     <img src="../assets/ai.png" alt="Service 1"
-                        class=" mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
-                    <h3 class="text-base  text-center font-semibold text-gray-800">AI-Driven Optimization</h3>
-                    <p class="text-secondary mt-2 text-center">24/7 automated savings</p>
+                        class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
+                    <h3 class="text-base text-center font-semibold text-gray-800">
+                        AI-Driven Optimization
+                    </h3>
+                    <p class="text-secondary mt-2 text-center">
+                        24/7 automated savings
+                    </p>
                 </div>
 
                 <!-- Service 2 -->
                 <div>
                     <img src="../assets/power.png" alt="Service 1"
-                        class=" mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
-                    <h3 class="text-base  text-center font-semibold text-gray-800">Group Buying Power</h3>
-                    <p class="text-secondary mt-2 text-center">Enterprise-level discounts for all
+                        class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
+                    <h3 class="text-base text-center font-semibold text-gray-800">
+                        Group Buying Power
+                    </h3>
+                    <p class="text-secondary mt-2 text-center">
+                        Enterprise-level discounts for all
                     </p>
                 </div>
-
 
                 <!-- Service 3 -->
                 <div>
                     <img src="../assets/commitment.png" alt="Service 1"
-                        class=" mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
-                    <h3 class="text-base text-center font-semibold text-gray-800">Flexible Commitments</h3>
-                    <p class="text-secondary mt-2 text-center"> No long-term contracts</p>
+                        class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
+                    <h3 class="text-base text-center font-semibold text-gray-800">
+                        Flexible Commitments
+                    </h3>
+                    <p class="text-secondary mt-2 text-center">
+                         No long-term contracts
+                    </p>
                 </div>
-
 
                 <!-- Service 4 -->
                 <div>
                     <img src="../assets/saving.png" alt="Service 1"
-                        class=" mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
-                    <h3 class="text-base  text-center font-semibold text-gray-800"> Instant Savings</h3>
-                    <p class="text-secondary mt-2 text-center">Start saving from day one</p>
+                        class="mx-auto h-[50px] w-[50px] object-cover rounded-lg mb-4" />
+                    <h3 class="text-base text-center font-semibold text-gray-800">
+                         Instant Savings
+                    </h3>
+                    <p class="text-secondary mt-2 text-center">
+                        Start saving from day one
+                    </p>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="py-16  ">
+    <section class="py-16">
         <div class="container mx-auto px-4 text-center">
             <!-- Heading and Subtitle -->
             <h2 class="text-3xl font-bold text-black mb-4">How It Works</h2>
-            <p class="  text-secondary mb-12">
-                No more surprise bill shocks, Now Discover hidden optimization <br> signals & Identify potential savings
-                goals.
+            <p class="text-secondary mb-12">
+                No more surprise bill shocks, Now Discover hidden optimization <br />
+                signals & Identify potential savings goals.
             </p>
 
             <!-- Steps with Connecting Lines -->
             <div class="flex w-[80%] mx-auto items-center py-4 justify-between gap-2 lg:gap-8 mb-12">
                 <!-- Step 1 -->
-                <div class=" flex-col items-center">
+                <div class="flex-col items-center">
                     <div
-                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center  ">
+                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center">
                         1
                     </div>
                 </div>
                 <!-- Horizontal Line -->
-                <div class="flex-grow  h-[2px] bg-primary-light hidden sm:block"></div>
+                <div class="flex-grow h-[2px] bg-primary-light hidden sm:block"></div>
                 <!-- Step 2 -->
                 <div class="flex flex-col items-center">
                     <div
-                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center ">
+                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center">
                         2
                     </div>
                 </div>
                 <!-- Horizontal Line -->
-                <div class="flex-grow  h-[2px] bg-primary-light hidden sm:block"></div>
+                <div class="flex-grow h-[2px] bg-primary-light hidden sm:block"></div>
                 <!-- Step 3 -->
                 <div class="flex flex-col items-center">
                     <div
-                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center  ">
+                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center">
                         3
                     </div>
                 </div>
@@ -218,7 +231,7 @@
                 <!-- Step 4 -->
                 <div class="flex flex-col items-center">
                     <div
-                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center ">
+                        class="w-[30px] h-[30px] rounded-full bg-primary-light text-white flex items-center justify-center">
                         4
                     </div>
                 </div>
@@ -227,30 +240,33 @@
             <!-- Grid Layout for Services -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-white p-6 border border-secondary border-opacity-50 rounded  transition duration-300">
-                    <img src="../assets/connect.png" alt="Service 1" class="mx-auto h-[50px] object-cover   mb-4" />
+                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
+                    <img src="../assets/connect.png" alt="Service 1" class="mx-auto object-cover mb-4" />
                     <h3 class="text-base font-semibold text-black">Connect</h3>
-                    <p class="text-secondary mt-2">Create stunning websites that are both functional and beautiful.</p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-white p-6 border border-secondary border-opacity-50  rounded transition duration-300">
-                    <img src="../assets/analyz.png" alt="Service 1" class="mx-auto h-[50px] object-cover   mb-4" />
-                    <h3 class="text-base font-semibold text-black">Analyze</h3>
-                    <p class="text-secondary mt-2">AI scans for savings opportunities</p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-white p-6 border border-secondary border-opacity-50 rounded  transition duration-300">
-                    <img src="../assets/save.png" alt="Service 1" class="mx-auto h-[50px] object-cover   mb-4" />
-                    <h3 class="text-base font-semibold text-black">Save</h3>
-                    <p class="text-secondary mt-2">Automated discount application
+                    <p class="text-secondary mt-2">
+                        Create stunning websites that are both functional and beautiful.
                     </p>
                 </div>
 
+                <!-- Service 2 -->
+                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
+                    <img src="../assets/analyz.png" alt="Service 1" class="mx-auto object-cover mb-4" />
+                    <h3 class="text-base font-semibold text-black">Analyze</h3>
+                    <p class="text-secondary mt-2">
+                        AI scans for savings opportunities
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
+                    <img src="../assets/save.png" alt="Service 1" class="mx-auto object-cover mb-4" />
+                    <h3 class="text-base font-semibold text-black">Save</h3>
+                    <p class="text-secondary mt-2">Automated discount application</p>
+                </div>
+
                 <!-- Service 4 -->
-                <div class="bg-white p-6 border border-secondary border-opacity-50  rounded  transition duration-300">
-                    <img src="../assets/monitor.png" alt="Service 1" class="mx-auto h-[50px] object-cover   mb-4" />
+                <div class="bg-white shadow-spread p-6  rounded transition duration-300">
+                    <img src="../assets/monitor.png" alt="Service 1" class="mx-auto object-cover mb-4" />
                     <h3 class="text-base font-semibold text-black">Monitor</h3>
                     <p class="text-secondary mt-2">Real-time optimization</p>
                 </div>
@@ -259,29 +275,37 @@
     </section>
 
     <section class="py-16">
-        <div class="container mx-auto px-4  ">
-            <h2 class="text-2xl lg:text-4xl lg:leading-[40px]  font-bold text-black  mb-5">Cloud Cost Optimization
-                Features</h2>
-            <p class="  text-secondary mb-12">Discover Thrusher's AIs powerful features for AWS cost optimization. <br>
-                AI-driven analysis, real-time monitoring, and automated savings.</p>
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl lg:text-4xl lg:leading-[40px] font-bold text-black mb-5">
+                Cloud Cost Optimization Features
+            </h2>
+            <p class="text-secondary mb-12">
+                Discover Thrusher's AIs powerful features for AWS cost optimization.
+                <br />
+                AI-driven analysis, real-time monitoring, and automated savings.
+            </p>
             <div class="grid grid-cols-1 py-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1 -->
                 <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px]">
-
-                    <h3 class="text-xl mb-[10px]  font-semibold text-black">Cost Analysis Dashboard </h3>
+                    <h3 class="text-xl mb-[10px] font-semibold text-black">
+                        Cost Analysis Dashboard
+                    </h3>
                     <ul class="px-2">
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Real-time
-                            cost tracking</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Usage
-                            analytics</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Spending
-                            forecasts</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Anomaly
-                            detection</li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Real-time cost
+                            tracking
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Usage analytics
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Spending
+                            forecasts
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Anomaly
+                            detection
+                        </li>
                     </ul>
 
                     <img src="../assets/cost-analysis.png" alt="Service 1" class="object-cover" />
@@ -289,71 +313,91 @@
 
                 <!-- Service 2 -->
                 <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px]">
-
-                    <h3 class="text-xl mb-[10px]  font-semibold text-black">Resource Management </h3>
+                    <h3 class="text-xl mb-[10px] font-semibold text-black">
+                        Resource Management
+                    </h3>
                     <ul class="px-2">
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Idle resource detection</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Automated scaling</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Workload optimization</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Asset inventory</li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Idle resource
+                            detection
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Automated
+                            scaling
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Workload
+                            optimization
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Asset inventory
+                        </li>
                     </ul>
 
                     <img src="../assets/resource-manage.png" alt="Service 1" class="object-cover mt-[10px]" />
                 </div>
 
-
                 <!-- Service 3 -->
                 <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px]">
-
-                    <h3 class="text-xl mb-[10px]  font-semibold text-black">Monitoring & Alerts</h3>
+                    <h3 class="text-xl mb-[10px] font-semibold text-black">
+                        Monitoring & Alerts
+                    </h3>
                     <ul class="px-2">
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Custom alert thresholds</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Slack integration</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Email notifications</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Cost anomaly detection</li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Custom alert
+                            thresholds
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Slack
+                            integration
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Email
+                            notifications
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Cost anomaly
+                            detection
+                        </li>
                     </ul>
 
                     <img src="../assets/monitoring-alert.png" alt="Service 1" class="object-cover" />
                 </div>
 
-
                 <!-- Service 4 -->
-
-
             </div>
 
             <div class="grid grid-cols-1 py-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <!-- Service 1 -->
                 <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px] pb-[0px">
-
-                    <h3 class="text-xl mb-[10px]  font-semibold text-black">Saving opportunities</h3>
+                    <h3 class="text-xl mb-[10px] font-semibold text-black">
+                        Saving opportunities
+                    </h3>
                     <ul class="px-2 mb-0 pb-0">
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Optimal utilization of Reserved Instances, Savings Plans, and Spot Instances
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Optimal
+                            utilization of Reserved Instances, Savings Plans, and Spot
+                            Instances
                         </li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Unused resource detection</li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">R&D resource power management and rightsizing
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Unused resource
+                            detection
                         </li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">S3 duplicate object finder
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />R&D resource
+                            power management and rightsizing
                         </li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Resource bottleneck identification
-
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />S3 duplicate
+                            object finder
                         </li>
-                        <li class="flex gap-[10px] mb-[5px] items-center"><img src="../assets/mdi_check-all.png"
-                                alt="">Optimal instance type and family selection
-
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Resource
+                            bottleneck identification
+                        </li>
+                        <li class="flex gap-[10px] mb-[5px] items-center text-secondary">
+                            <img src="../assets/mdi_check-all.png" alt="" />Optimal instance
+                            type and family selection
                         </li>
                     </ul>
 
@@ -362,62 +406,77 @@
 
                 <!-- Service 2 -->
                 <div class="border border-secondary border-opacity-50 bg-[#F2F8FF] rounded-[16px] p-[30px] ]">
+                    <h3 class="text-xl mb-[10px] font-semibold text-black">
+                        Integrations
+                    </h3>
 
-                    <h3 class="text-xl mb-[10px]  font-semibold text-black">Integrations</h3>
                     <ul class="px-2 flex gap-[30px] mt-5">
-                        <li><img src="../assets/slack.png" alt="Service 1" class="object-cover" /></li>
-                        <li><img src="../assets/gmail.png" alt="Service 1" class="object-cover" /></li>
-                        <li><img src="../assets/discord.png" alt="Service 1" class="object-cover" /></li>
-                        <li><img src="../assets/chat.png" alt="Service 1" class="object-cover" /></li>
-                        <li><img src="../assets/team.png" alt="Service 1" class="object-cover" /></li>
-                        <li><img src="../assets/jira.png" alt="Service 1" class="object-cover" /></li>
+
+                        <li>
+                            <img src="../assets/slack.png" alt="Service 1" class="object-cover" />
+                        </li>
+                        <li>
+                            <img src="../assets/gmail.png" alt="Service 1" class="object-cover" />
+                        </li>
+                        <li>
+                            <img src="../assets/discord.png" alt="Service 1" class="object-cover" />
+                        </li>
+                        <li>
+                            <img src="../assets/chat.png" alt="Service 1" class="object-cover" />
+                        </li>
+                        <li>
+                            <img src="../assets/team.png" alt="Service 1" class="object-cover" />
+                        </li>
+                        <li>
+                            <img src="../assets/jira.png" alt="Service 1" class="object-cover" />
+                        </li>
                     </ul>
-
-
                 </div>
-
-
-
-
-
             </div>
         </div>
     </section>
 
     <section>
-        <h2 class="text-2xl lg:text-4xl text-center py-6 lg:leading-[40px]  font-bold text-black  mb-5">Join the
-            Thrusher Revolution Today</h2>
-            <div class="bg-primary-light bg-opacity-10 py-16">
-                <div class="container mx-auto px-4 ">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-between items-start">
-                        <!-- Text Content -->
-                        <div>
-                            <h3 class="text-black text-2xl leading-[36px] md:text-3xl font-semiBold lg:leading-[40px]">
-                                Thrusher is 100% FREE to use. <br> We only succeed when you save!
-                            </h3>
-                            <ul class="px-2 mt-6">
-                                <li class="flex gap-3 mb-3 items-center">
-                                    <img src="../assets/icon-park-outline_check-one.png" class="w-5" alt="">
-                                    No contracts, no credit cards on file
-                                </li>
-                                <li class="flex gap-3 mb-3 items-center">
-                                    <img src="../assets/icon-park-outline_check-one.png" class="w-5" alt="">
-                                    If you don't see the value in using Thrusher, <br> request to cancel your account and our team will offboard you
-                                </li>
-                                <li class="flex gap-3 mb-3 items-center">
-                                    <img src="../assets/icon-park-outline_check-one.png" class="w-5" alt="">
-                                    No questions asked
-                                </li>
-                            </ul>
-                            <button class="px-[20px] btn btn-primary mt-[10px]">Start Your Free Trial</button>
-                        </div>
-            
-                        <!-- Video or Iframe Section -->
-                        <div class="flex justify-center items-center">
+        <h2 class="text-2xl lg:text-4xl text-center py-6 lg:leading-[40px] font-bold text-black mb-5">
+            Join the Thrusher Revolution Today
+        </h2>
+        <div class="bg-primary-light bg-opacity-10 py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-between items-start">
+                    <!-- Text Content -->
+                    <div>
+                        <h3 class="text-black text-2xl leading-[36px] md:text-3xl font-extrabold lg:leading-[40px]">
+                            Thrusher is 100% FREE to use. <br />
+                            We only succeed when you save!
+                        </h3>
+                        <ul class="px-2 mt-6">
+                            <li class="flex gap-3 mb-3 items-center text-secondary">
+                                <img src="../assets/icon-park-outline_check-one.png" class="object-cover w-[20px]"
+                                    alt="" />
+                                No contracts, no credit cards on file
+                            </li>
+                            <li class="flex gap-3 mb-3 items-center text-secondary">
+                                <img src="../assets/icon-park-outline_check-one.png" class="object-cover w-[20px]"
+                                    alt="" />
+                                If you don't see the value in using Thrusher, <br />
+                                request to cancel your account and our team will offboard you
+                            </li>
+                            <li class="flex gap-3 mb-3 items-center text-secondary">
+                                <img src="../assets/icon-park-outline_check-one.png" class="object-cover w-[20px]"
+                                    alt="" />
+                                No questions asked
+                            </li>
+                        </ul>
+                        <button class="px-[20px] btn btn-primary mt-[10px]">
+                            Start Your Free Trial
+                        </button>
+                    </div>
 
-                            <img src="../assets/thumbnail.png" class="object-cover" alt="">
-                            <!-- Use an iframe for external videos -->
-                            <!-- <iframe
+                    <!-- Video or Iframe Section -->
+                    <div class="flex justify-center items-center">
+                        <img src="../assets/thumbnail.png" class="object-cover" alt="" />
+                        <!-- Use an iframe for external videos -->
+                        <!-- <iframe
                                 class="w-full max-w-[500px] h-[280px] md:h-[320px] lg:h-[400px] rounded-[16px] shadow-md"
                                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                                 title="YouTube video player"
@@ -425,9 +484,9 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe> -->
-            
-                            <!-- Alternative: Use a video tag for self-hosted videos -->
-                            <!--
+
+                        <!-- Alternative: Use a video tag for self-hosted videos -->
+                        <!--
                             <video
                                 class="w-full max-w-[500px] h-[280px] md:h-[320px] lg:h-[400px] rounded-md shadow-md"
                                 controls>
@@ -435,32 +494,13 @@
                                 Your browser does not support the video tag.
                             </video>
                             -->
-                        </div>
                     </div>
                 </div>
-
-                <div class="bg-primary w-full py-5 mt-[20px]">
-                   <div class="flex gap-[20px] overflow-hidden">
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                    <h1 class="md:text-4xl text-white font-extrabold">FREE</h1>
-                   </div>
-                </div>
             </div>
-            
-    </section>
 
+
+        </div>
+    </section>
 
     <footer class="bg-primary-dark py-10 text-gray-300">
         <div class="container mx-auto px-4">
@@ -468,7 +508,10 @@
                 <!-- Column 1 -->
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Thrusher</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quis.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dignissimos, quis.
+                    </p>
                     <!-- <ul>
                         <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
                         <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
@@ -481,24 +524,31 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Resources</h4>
                     <ul>
-
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Documentation</a></li>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Quick Start Guide
-                            </a></li>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors"> Integration
-                                Guides</a></li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Documentation</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Quick Start Guide
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors"> Integration Guides</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Blog</h4>
                     <ul>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Case Studies
-                            </a></li>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Customer
-                                Testimonials</a></li>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Customer Success
-                                Stories</a></li>
-
+                        <li class="mb-3">
+                            <a href="blog.html" class="hover:text-primary transition-colors">Case Studies
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Customer Testimonials</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Customer Success Stories</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -506,12 +556,15 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4 text-white">Legal</h4>
                     <ul>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
                         </li>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
                         </li>
-                        <li class="mb-3"><a href="#" class="hover:text-primary transition-colors">Cookie Policy</a></li>
-
+                        <li class="mb-3">
+                            <a href="#" class="hover:text-primary transition-colors">Cookie Policy</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -523,29 +576,24 @@
         </div>
     </footer>
 
-
     <script>
         // let year = new Date().getFullYear()
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const closeBtn = document.getElementById('close-btn');
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeBtn = document.getElementById("close-btn");
 
         // Open mobile menu
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('-translate-x-full'); // Slide in menu
-            mobileMenu.classList.add('translate-x-0');       // Ensure it's in view
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("-translate-x-full"); // Slide in menu
+            mobileMenu.classList.add("translate-x-0"); // Ensure it's in view
         });
 
         // Close mobile menu
-        closeBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-0');    // Slide out menu
-            mobileMenu.classList.add('-translate-x-full');    // Ensure it's off-screen
+        closeBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("translate-x-0"); // Slide out menu
+            mobileMenu.classList.add("-translate-x-full"); // Ensure it's off-screen
         });
     </script>
-
-
-
-
 </body>
 
 </html>

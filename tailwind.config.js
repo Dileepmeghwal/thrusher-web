@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  important:true,
+  important: true,
   content: ["./*.html"], // Adjust the paths based on your file structure
   theme: {
     extend: {
@@ -24,10 +24,12 @@ module.exports = {
           green: "#10b981", // Vibrant green
           red: "#ef4444", // Vibrant red
         },
+        stroke:"rgba(170, 175, 186, 0.13)"
       },
       fontFamily: {
         sans: ["DM Sans", "sans-serif"], // Add DM Sans here
       },
+
       typography: {
         DEFAULT: {
           css: {
@@ -59,8 +61,10 @@ module.exports = {
         medium: "500",
       },
       boxShadow: {
+        DEFAULT: "rgba(0, 0, 0, 0.09) 0px 3px 12px;",
         soft: "0 4px 6px rgba(0, 0, 0, 0.1)", // Add soft shadow
         hard: "0 10px 15px rgba(0, 0, 0, 0.2)", // Add a hard shadow
+        spread:"rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;"
       },
       borderRadius: {
         DEFAULT: "8px",
