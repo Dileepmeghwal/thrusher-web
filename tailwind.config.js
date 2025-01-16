@@ -24,10 +24,11 @@ module.exports = {
           green: "#10b981", // Vibrant green
           red: "#ef4444", // Vibrant red
         },
-        stroke:"rgba(170, 175, 186, 0.13)"
+        stroke: "rgba(170, 175, 186, 0.13)",
       },
       fontFamily: {
-        sans: ["DM Sans", "sans-serif"], // Add DM Sans here
+        // sans: ["DM Sans", "sans-serif"], // Add DM Sans here
+        sans: ["Roboto", 'serif'],
       },
 
       typography: {
@@ -64,8 +65,7 @@ module.exports = {
         DEFAULT: "rgba(0, 0, 0, 0.09) 0px 3px 12px;",
         soft: "rgba(100, 100, 111, 0.25) 0px 7px 29px 0px;", // Add soft shadow
         hard: "0 10px 15px rgba(0, 0, 0, 0.2)", // Add a hard shadow
-        spread:"rgba(149, 157, 165, 0.2) 0px 8px 24px;"
-        
+        spread: "rgba(149, 157, 165, 0.2) 0px 8px 24px;",
       },
       borderRadius: {
         DEFAULT: "8px",

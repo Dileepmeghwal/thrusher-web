@@ -119,10 +119,14 @@
                         <div class="meetings-iframe-container"
                             data-src="https://meetings.hubspot.com/dileep-meghwal?embed=true"></div>
 
-                        <!-- End of Meetings Embed Script -->
+
+
                     </div>
+
+                    <!-- End of Meetings Embed Script -->
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -275,6 +279,17 @@
 
     <script>
         // let year = new Date().getFullYear()
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const iframeContainer = document.querySelector('.meetings-iframe-container iframe');
+    
+    if (iframeContainer) {
+      const targetElement = iframeContainer.contentWindow.document.querySelector('[data-application-name="embedded-viral-link-ui"]');
+      if (targetElement) {
+        targetElement.removeAttribute('data-application-name');
+      }
+    }
+  });
         const menuBtn = document.getElementById("menu-btn");
         const mobileMenu = document.getElementById("mobile-menu");
         const closeBtn = document.getElementById("close-btn");
@@ -290,6 +305,9 @@
             mobileMenu.classList.remove("translate-x-0"); // Slide out menu
             mobileMenu.classList.add("-translate-x-full"); // Ensure it's off-screen
         });
+
+        // document.querySelector('iframe[data-test-id="viral-link-iframe"]').style.display = 'none';
+
     </script>
     <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 </body>

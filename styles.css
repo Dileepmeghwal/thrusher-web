@@ -31,7 +31,7 @@ html {
 .date-picker-freemium-cta {
   display: none;
 }
-body > div.private-layer > div > div > div{
+body > div.private-layer > div > div > div {
   display: none !important;
 }
 @layer components {
@@ -81,10 +81,9 @@ body > div.private-layer > div > div > div{
   /* display: none; */
 }
 
-.hubspot .ui-app .hubspot-disable-focus-styles{
+.hubspot .ui-app .hubspot-disable-focus-styles {
   display: none !important;
 }
-
 
 .testimonial-slider .slick-slide {
   margin: 0 10px; /* Adjust the margin value here */
@@ -93,4 +92,13 @@ body > div.private-layer > div > div > div{
 /* Optional: Adjust slick track if needed */
 .testimonial-slider .slick-track {
   display: flex;
+}
+
+
+
+.meetings-iframe-container {
+  width: 100%; /* Set the desired width */
+  height: 600px; /* Set the desired height */
+
+  overflow: hidden; /* Ensure content stays within bounds */
 }
