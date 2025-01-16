@@ -13,6 +13,7 @@
         rel="stylesheet" /> -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="output.css" rel="stylesheet" />
 </head>
@@ -194,22 +195,17 @@
         </div>
     </div>
 
-    <footer class="bg-primary-dark py-10 text-gray-300">
+    <footer class="bg-primary-dark py-8 pt-16 text-gray-300  ">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
                 <!-- Column 1 -->
                 <div>
-                    <h4 class="text-2xl font-semibold mb-4 text-white">Thrusher</h4>
+                    <h4 class="text-3xl font-semibold mb-4 text-white">Thrusher</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dignissimos, quis.
                     </p>
-                    <!-- <ul>
-                        <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Press</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
-                    </ul> -->
+
                 </div>
 
                 <!-- Column 2 -->
@@ -224,7 +220,7 @@
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="hover:text-primary transition-colors"> Integration Guides</a>
+                            <a href="#" class="hover:text-primary transition-colors">Integration Guides</a>
                         </li>
                         <li class="mb-3">
                             <a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a>
@@ -266,6 +262,29 @@
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Get in touch</h4>
+
+                    <a href="mailto:info@thrusher.com"
+                        class="hover:text-primary transition-colors">info@thrusher.com</a>
+
+                    <ul class="flex gap-[20px] items-center">
+
+                        <li class="mt-2">
+                            <a href="#" class="hover:text-primary transition-colors"><i
+                                    class='  text-[24px] bx bxl-instagram'></i></a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#" class="hover:text-primary transition-colors"><i
+                                    class=' text-[24px] bx bxl-facebook'></i></a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#" class="hover:text-primary transition-colors"><i
+                                    class='text-[24px] bx bxl-linkedin'></i></a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
             <!-- Footer Bottom -->
@@ -275,23 +294,9 @@
         </div>
     </footer>
 
-    <script>
-        // let year = new Date().getFullYear()
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const closeBtn = document.getElementById("close-btn");
 
-        // Open mobile menu
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("-translate-x-full"); // Slide in menu
-            mobileMenu.classList.add("translate-x-0"); // Ensure it's in view
-        });
-
-        // Close mobile menu
-        closeBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("translate-x-0"); // Slide out menu
-            mobileMenu.classList.add("-translate-x-full"); // Ensure it's off-screen
-        });
+    <script src="main.js">
+      
     </script>
     <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
 </body>

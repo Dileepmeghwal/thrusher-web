@@ -11,8 +11,9 @@
     <!-- <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap"
         rel="stylesheet" /> -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="output.css" rel="stylesheet" />
 </head>
@@ -34,8 +35,8 @@
             </nav>
 
             <!-- Book a Demo Button (Hidden on mobile) -->
-            <!-- <button class="btn btn-primary hidden md:block" onclick="location.href='schedule-a-demo.html'">Book a
-                demo</button> -->
+            <button class="btn btn-primary hidden md:block" onclick="location.href='schedule-a-demo.html'">Book a
+                demo</button>
 
             <!-- Hamburger Menu (Mobile) -->
             <button class="md:hidden text-gray-600 focus:outline-none" id="menu-btn">
@@ -48,7 +49,7 @@
 
         <!-- Mobile Menu (Initially hidden off-screen, only visible on mobile, hidden on medium screens and larger) -->
         <div id="mobile-menu"
-            class="fixed z-10  bg-white left-0 top-0 h-full w-64 shadow text-white transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
+            class="fixed z-20  bg-white left-0 top-0 h-full w-64 shadow text-white transform -translate-x-full transition-all duration-300 ease-in-out md:hidden">
             <div class="flex justify-end p-4">
                 <button id="close-btn" class="text-black">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -64,14 +65,16 @@
             <a href="#" class="block px-[30px] py-2 text-black hover:bg-blue-100">Pricing</a>
         </div>
     </header>
-    <section class="relative w-full h-96 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=');">
+    <section class="relative w-full h-96 bg-cover bg-center"
+        style="background-image: url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=');">
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto h-full flex flex-col justify-center text-center text-white px-6">
-          <h1 class="text-4xl md:text-5xl font-semibold mb-4 z-10">Welcome to Our Blog</h1>
-          <p class="text-lg md:text-xl mb-6 text-white z-10 ">Discover insightful articles on the latest trends in technology, development, and more.</p>
-          <!-- <a href="#latest-post" class="inline-block bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-md text-lg font-medium transition duration-300 ease-in-out">Read Our Latest Post</a> -->
+            <h1 class="text-2xl sm:text-4xl md:text-5xl font-semibold mb-4 z-10">Welcome to Our Blog</h1>
+            <p class="text-base md:text-xl mb-6 text-white z-10 ">Discover insightful articles on the latest trends in
+                technology, development, and more.</p>
+            <!-- <a href="#latest-post" class="inline-block bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-md text-lg font-medium transition duration-300 ease-in-out">Read Our Latest Post</a> -->
         </div>
-      </section>    
+    </section>
     <main class="container mx-auto px-6 lg:px-8 py-12">
         <h2 class="text-3xl font-bold text-primary-dark mb-8">Latest Posts</h2>
 
@@ -169,22 +172,17 @@
         </div>
     </main>
 
-    <footer class="bg-primary-dark py-10 text-gray-300">
+    <footer class="bg-primary-dark py-8 pt-16 text-gray-300  ">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-8">
                 <!-- Column 1 -->
                 <div>
-                    <h4 class="text-2xl font-semibold mb-4 text-white">Thrusher</h4>
+                    <h4 class="text-3xl font-semibold mb-4 text-white">Thrusher</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dignissimos, quis.
                     </p>
-                    <!-- <ul>
-                        <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Press</a></li>
-                        <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
-                    </ul> -->
+
                 </div>
 
                 <!-- Column 2 -->
@@ -199,7 +197,7 @@
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="hover:text-primary transition-colors"> Integration Guides</a>
+                            <a href="#" class="hover:text-primary transition-colors">Integration Guides</a>
                         </li>
                         <li class="mb-3">
                             <a href="contact.html" class="hover:text-primary transition-colors">Contact Us</a>
@@ -241,6 +239,29 @@
                         </li>
                     </ul>
                 </div>
+                <div>
+                    <h4 class="text-[16px] font-semibold mb-4 text-white">Get in touch</h4>
+
+                    <a href="mailto:info@thrusher.com"
+                        class="hover:text-primary transition-colors">info@thrusher.com</a>
+
+                    <ul class="flex gap-[20px] items-center">
+
+                        <li class="mt-2">
+                            <a href="#" class="hover:text-primary transition-colors"><i
+                                    class='  text-[24px] bx bxl-instagram'></i></a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#" class="hover:text-primary transition-colors"><i
+                                    class=' text-[24px] bx bxl-facebook'></i></a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="#" class="hover:text-primary transition-colors"><i
+                                    class='text-[24px] bx bxl-linkedin'></i></a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
             <!-- Footer Bottom -->
@@ -250,25 +271,9 @@
         </div>
     </footer>
 
-    <script>
-        // let year = new Date().getFullYear()
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const closeBtn = document.getElementById("close-btn");
 
-        // Open mobile menu
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("-translate-x-full"); // Slide in menu
-            mobileMenu.classList.add("translate-x-0"); // Ensure it's in view
-        });
-
-        // Close mobile menu
-        closeBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("translate-x-0"); // Slide out menu
-            mobileMenu.classList.add("-translate-x-full"); // Ensure it's off-screen
-        });
-    </script>
-    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+    <script src="main.js"></script>
+    
 </body>
 
 </html>
